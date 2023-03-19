@@ -1,0 +1,2 @@
+# FlashChart
+ Aplikacja wykorzystująca Firebase
