@@ -1,6 +1,7 @@
 import 'package:flash_chart/screens/login_screen.dart';
 import 'package:flash_chart/screens/registration_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const String id = 'welcome_screen';
@@ -58,13 +59,15 @@ class WelcomeScreenState extends State<WelcomeScreen>
                     child: Image.asset('images/logo.png'),
                   ),
                 ),
-                const Text(
-                  'Flash Chat',
-                  style: TextStyle(
-                    fontSize: 45.0,
-                    fontWeight: FontWeight.w900,
+                DefaultTextStyle(
+                  style: const TextStyle(
+                      fontSize: 45.0,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.black54),
+                  child: AnimatedTextKit(
+                    animatedTexts: [TypewriterAnimatedText('Flash Chat')],
                   ),
-                ),
+                )
               ],
             ),
             const SizedBox(
