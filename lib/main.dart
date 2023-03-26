@@ -17,10 +17,6 @@ class FlashChart extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData.dark().copyWith(
-          textTheme: const TextTheme(
-        bodyMedium: TextStyle(color: Colors.black54),
-      )),
       initialRoute: WelcomeScreen.id,
       routes: {
         WelcomeScreen.id: (context) => const WelcomeScreen(),
