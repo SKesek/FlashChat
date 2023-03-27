@@ -59,7 +59,7 @@ class WelcomeScreenState extends State<WelcomeScreen>
                   style: const TextStyle(
                       fontSize: 45.0,
                       fontWeight: FontWeight.w900,
-                      color: Colors.black54),
+                      color: Colors.black),
                   child: AnimatedTextKit(
                     animatedTexts: [TypewriterAnimatedText('Flash Chat')],
                   ),

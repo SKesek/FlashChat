@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flash_chart/screens/chat_screen.dart';
 import 'package:flash_chart/screens/login_screen.dart';
 import 'package:flash_chart/screens/registration_screen.dart';
@@ -5,6 +6,8 @@ import 'package:flash_chart/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(const FlashChart());
 }
 
@@ -16,7 +19,6 @@ class FlashChart extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       initialRoute: WelcomeScreen.id,
       routes: {
         WelcomeScreen.id: (context) => const WelcomeScreen(),
