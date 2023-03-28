@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flash_chart/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:modal_progress_hud/modal_progress_hud.dart';
 
 class ChatScreen extends StatefulWidget {
   static const String id = 'chat_screen';
