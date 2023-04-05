@@ -30,6 +30,5 @@ class RoundedButton extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }
