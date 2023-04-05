@@ -3,7 +3,6 @@ import 'package:flash_chart/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
-import '../components/rounded_button.dart';
 import 'chat_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -32,11 +31,13 @@ class LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Hero(
-                tag: 'logo',
-                child: Container(
-                  height: 200.0,
-                  child: Image.asset('images/logo.png'),
+              Flexible(
+                child: Hero(
+                  tag: 'logo',
+                  child: Container(
+                    height: 200.0,
+                    child: Image.asset('images/logo.png'),
+                  ),
                 ),
               ),
               const SizedBox(
@@ -75,7 +76,10 @@ class LoginScreenState extends State<LoginScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 child: Material(
                   color: Colors.lightBlueAccent,
-                  borderRadius: const BorderRadius.all(Radius.circular(30.0)),
+                  borderRadius: const BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      bottomLeft: Radius.circular(30),
+                      bottomRight: Radius.circular(30)),
                   elevation: 5.0,
                   child: MaterialButton(
                     onPressed: () async {
