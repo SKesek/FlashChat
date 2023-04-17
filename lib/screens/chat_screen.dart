@@ -22,8 +22,8 @@ class ChatScreenState extends State<ChatScreen> {
 
   @override
   void initState() {
-    getCurrentUser();
     super.initState();
+    getCurrentUser();
   }
 
   void getCurrentUser() async {
@@ -116,6 +116,7 @@ class MessagesStream extends StatelessWidget {
         for (var message in messages) {
           final messageText = message['text'];
           final messageSender = message['sender'];
+
           final currentUser = loggedInUser.email;
 
           final messageBubble = MessageBubble(
