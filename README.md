@@ -7,10 +7,16 @@
  Aplikacja wykorzystująca Firebase do czatu.
 
 Zostały w niej wykorzystane takie paczki jak: 
+
 Animated Text Kit,
+
 Firebase Core,
+
 Firebase Auth,
+
 Cloud Firestore,
+
 Modal Progress Hud NSN.
+
 
 Aplikacja umożliwia rejestrowanie i logowanie się do niej. Pozwala wysyłanie wiadomości między użytkownikami.
