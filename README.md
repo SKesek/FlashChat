@@ -1,4 +1,4 @@
-# FlashChart
+# FlashChat
  Aplikacja stworzona podczas kursu
  
  ![FlashChat](https://user-images.githubusercontent.com/113917953/235440433-95328a13-c490-4e70-bf40-f80eebb52903.png)
